@@ -1,15 +1,15 @@
 class Game
   attr_reader :board
-
+# create an array of rows and colums
   def initialize
     @board = Array.new(3) { Array.new(3) }
   end
-
+  # fil board
   def new_board
     @board = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
   end
 
-
+  #assign a spot to  a board position
   def get_spot(choice)
     spot = { '1' => [0, 0],
              '2' => [0, 1],
@@ -22,7 +22,7 @@ class Game
              '9' => [2, 2] }
     return spot[choice]
   end
-
+  # replace the number in the array with player symbol
   def update_board(spot, symbol)
     @board[spot[0]][spot[1]] = symbol
   end
@@ -47,7 +47,7 @@ class Game
 
     false
   end
-
+ 
   def board_full?
     return false if @board.flatten.any?(Numeric) 
     true #return true if all spot are taken by 'x' or 'o'
