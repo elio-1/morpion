@@ -9,6 +9,7 @@ Clone using this command or fork the project
 ```sh
 $ clone https://github.com/elio75006/morpion.git
 ``` 
+Then run in your terminal
 ```sh 
 bundle instal
 ```
