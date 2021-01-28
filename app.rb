@@ -6,7 +6,7 @@ require 'board'
 require 'player'
 
 
-
+# initalize game
 new_game = Game.new
 new_game.new_board
 player_one = Player.new('', 'X')
